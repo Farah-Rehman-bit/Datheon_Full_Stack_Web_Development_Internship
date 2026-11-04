@@ -16,7 +16,7 @@ A responsive personal portfolio website that presents my skills, projects and re
 - Downloadable resume
 
 **Tech:** HTML5, CSS3, JavaScript
-**Folder:** `Task-1-Portfolio`
+**Folder:** `Portfolio-farah`
 **Live demo:** https://farah-rehman-bit.github.io/Farah-Rehman-portfolio/
 
 ### Task 3: SkyDesk Live Weather App
@@ -31,7 +31,7 @@ A responsive weather dashboard that shows live weather data from the OpenWeather
 - Mobile responsive layout
 
 **Tech:** HTML5, CSS3 (Flexbox, Grid), JavaScript (Fetch API, async/await, try/catch)
-**Folder:** `Task-3-SkyDesk-Weather-App`
+**Folder:** `weather app`
 **Live demo:** https://farah-rehman-bit.github.io/SkyDesk-Live-Weather-App/
 
 ## Repository Structure
@@ -39,8 +39,8 @@ A responsive weather dashboard that shows live weather data from the OpenWeather
 ```
 Datheon_Full_Stack_Web_Development_Internship/
 ├── README.md
-├── Task-1-Portfolio/
-├── Task-3-SkyDesk-Weather-App/
+├── portfolio-farah/
+├── weather app/
 └── screenshots/
 ```
 
