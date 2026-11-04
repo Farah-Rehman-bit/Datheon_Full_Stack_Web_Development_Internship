@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkyDesk | Live Weather Telemetry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="clear-day">
+  <div class="app">
+    <header>
+      <div class="brand"><span class="dot"></span>SkyDesk</div>
+      <div class="live" id="clock">Live weather telemetry</div>
+    </header>
+
+    <form id="searchForm" autocomplete="off">
+      <input id="cityInput" type="text" placeholder="Search any city, e.g. Peshawar or Lahore,PK"
+        aria-label="City name">
+      <button type="submit" class="primary">Search</button>
+      <button type="button" id="locBtn">Use my location</button>
+      <button type="button" id="unitBtn" aria-label="Switch temperature unit">°C</button>
+    </form>
+    <div class="recent" id="recent"></div>
+
+    <section class="card notice hidden" id="keyPanel">
+      <p>Add your free OpenWeatherMap API key to load live data. You can create one on the
+        <a href="https://home.openweathermap.org/api_keys" target="_blank" rel="noopener">API keys page</a>.
+        New keys may take up to two hours to activate.
+      </p>
+      <div class="keybox">
+        <input id="keyInput" type="text" placeholder="Paste API key" aria-label="API key">
+        <button type="button" class="primary" id="saveKey">Save key</button>
+        <button type="button" id="demoBtn">View demo data</button>
+      </div>
+    </section>
+
+    <div id="status" class="hidden" role="status">
+      <div class="spinner"></div>Fetching live data…
+    </div>
+    <div id="error" class="error hidden" role="alert"></div>
+
+    <div id="result" class="hidden">
+      <div class="grid">
+        <section class="card hero">
+          <div>
+            <div class="city" id="cityName"></div>
+            <div class="meta" id="localTime"></div>
+          </div>
+          <div>
+            <div class="readout"><img id="icon" alt="">
+              <div class="temp" id="temp"></div>
+            </div>
+            <div class="cond" id="condText"></div>
+            <div class="sub" id="feels"></div>
+          </div>
+        </section>
+        <section class="metrics" aria-label="Current conditions">
+          <div class="metric"><span>Humidity</span><b id="hum"></b></div>
+          <div class="metric"><span>Wind speed</span><b id="wind"></b></div>
+          <div class="metric"><span>Atmospheric pressure</span><b id="pres"></b></div>
+          <div class="metric"><span>Visibility</span><b id="vis"></b></div>
+          <div class="metric"><span>Sunrise</span><b id="rise"></b></div>
+          <div class="metric"><span>Sunset</span><b id="set"></b></div>
+        </section>
+      </div>
+      <h2>5-day forecast</h2>
+      <div class="forecast" id="forecast"></div>
+    </div>
+
+    <footer>Data by OpenWeatherMap · <button type="button" id="changeKey">Change API key</button></footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
