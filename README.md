@@ -15,9 +15,12 @@ A responsive personal portfolio website that presents my skills, projects and re
 - Filterable project cards
 - Downloadable resume
 
-**Tech:** HTML5, CSS3, JavaScript
-**Folder:** `portfolio-farah`
-**Live demo:** (https://farah-rehman-bit.github.io/Farah-Rehman-portfolio/)
+**Details**
+- **Tech:** HTML5, CSS3, JavaScript
+- **Folder:** [portfolio-farah](portfolio-farah)
+- **Live demo:** [Open the portfolio](https://farah-rehman-bit.github.io/Farah-Rehman-portfolio/)
+- **Source code:** [GitHub repository](https://github.com/Farah-Rehman-bit/Farah-Rehman-portfolio)
+
 
 ### Task 3: SkyDesk Live Weather App
 A responsive weather dashboard that shows live weather data from the OpenWeatherMap API.
@@ -30,10 +33,10 @@ A responsive weather dashboard that shows live weather data from the OpenWeather
 - °C / °F toggle, location search and recent searches
 - Mobile responsive layout
 
-**Tech:** HTML5, CSS3 (Flexbox, Grid), JavaScript (Fetch API, async/await, try/catch)
-**Folder:** `weather app`
-**Live demo:** (https://farah-rehman-bit.github.io/SkyDesk-Live-Weather-App/)
-
+- **Tech:** HTML5, CSS3 (Flexbox, Grid), JavaScript (Fetch API, async/await, try/catch)
+- **Folder:** [weather app](weather%20app)
+- **Live demo:** [Open the weather app](https://farah-rehman-bit.github.io/SkyDesk-Live-Weather-App/)
+- **Source code:** [GitHub repository](https://github.com/Farah-Rehman-bit/SkyDesk-Live-Weather-App)
 ## Repository Structure
 
 ```
